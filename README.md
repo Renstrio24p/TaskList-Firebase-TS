@@ -1,7 +1,13 @@
 
 ## TaskList Firebase with Pure Typescript
 
-- Bundler Webpack JS
+- Bundler 
+
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+
+- Database
+
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 
 I template I used
 
