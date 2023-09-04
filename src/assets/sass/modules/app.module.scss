@@ -1,0 +1,100 @@
+@import '../mixins.scss';
+
+.new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+}
+
+.new-task-input::placeholder {
+	color: var(--light);
+}
+
+.new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 600;
+	background-image: linear-gradient(to right, var(--pink),var(--purple));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.new-task-submit:hover {
+	opacity: 0.8;
+}
+
+.new-task-submit:active {
+	opacity: 0.67;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--gray);
+	margin-bottom: 1rem;
+}
+
+.task-div .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.task-div .task .content {
+	flex: 1 1 0%;
+}
+
+.task-div .task .content .text {
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task-div .task .content .text:not(:read-only){
+	color: var(--pink);
+}
+
+.task-div .task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task-div .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .4s;
+}
+
+.task-div .actions button:hover {
+	opacity: 0.8;
+}
+
+.task-div .actions button:active {
+	opacity: 0.6;
+}
+
+.task-div .actions .edit {
+	background-image: linear-gradient(to right, var(--pink),var(--purple));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.task-div .actions .delete {
+	color: var(--crimson);
+}
